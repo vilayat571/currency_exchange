@@ -16,7 +16,7 @@ export default function HeroSection({ language, texts }: HeroSectionProps) {
       <h1 className={` ${language=='English' ? 'xl:text-7xl' : 'xl:text-6xl'}  sm:text-4xl md:text-4xl lg:text-7xl font-bold leading-tight`}>
         {texts.swap}, {texts.stake}, and {texts.earn}
         <br />
-        All in One Place
+        All in One Placedededede
       </h1>
       <p className="max-w-3xl  text-center italic text-sm sm:text-base md:text-lg whitespace-pre-line">
         {language === "English"
