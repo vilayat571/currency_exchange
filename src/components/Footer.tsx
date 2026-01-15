@@ -17,15 +17,33 @@ export default function Footer({ language }: FooterProps) {
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <span className="font-semibold">{texts.socialMedia || "Social Media"}</span>
           <div className="flex gap-4 text-2xl mt-2">
-            <a href="#" aria-label="Discord">
-              <FaDiscord />
-            </a>
-            <a href="#" aria-label="Twitter">
-              <FaTwitter />
-            </a>
-            <a href="#" aria-label="Reddit">
-              <FaReddit />
-            </a>
+  <button
+    type="button"
+    aria-label="Discord"
+    className="social-button"
+    onClick={() => window.open("https://discord.com", "_blank", "noopener,noreferrer")}
+  >
+    <FaDiscord />
+  </button>
+
+  <button
+    type="button"
+    aria-label="Twitter"
+    className="social-button"
+    onClick={() => window.open("https://twitter.com", "_blank", "noopener,noreferrer")}
+  >
+    <FaTwitter />
+  </button>
+
+  <button
+    type="button"
+    aria-label="Reddit"
+    className="social-button"
+    onClick={() => window.open("https://reddit.com", "_blank", "noopener,noreferrer")}
+  >
+    <FaReddit />
+  </button>
+
           </div>
         </div>
 
