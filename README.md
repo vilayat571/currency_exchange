@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+**TASK NUMBER 3 – Currency Swap Form**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+For this task, I was required to create a currency swap form. The total development time was approximately 8 hours.
 
-Currently, two official plugins are available:
+ **Technologies and Packages Used**
+I used the following tools and technologies to build this project:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Framer Motion** – for intro animations
+2. **Vite.js** – as the build tool
+3. **Tailwind CSS** – for styling
+4. **React Icons** – for icons
+5. **TypeScript** – for static typing
+6. **React** – main framework
+7. **Toastify** – for alert messages
+8. **Local Storage** – to save the default currency
+9. **Google Fonts (Poppins)** – for typography
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ **Design and Development Process**
 
-## Expanding the ESLint configuration
+First, I researched similar projects and took inspiration from platforms such as **Dribbble**, **Nicepage**, and **TemplateMonster**.
+After that, I designed the user interface in **Figma**.
+Once the design was ready, I started development using React and the tools listed above.
+After completing the project, I deployed it to **Vercel**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Key Features**
+The application includes the following features:
+1. A welcome portal that requires users to select a currency before entering the app
+2. Ability to choose a default currency and save it in local storage
+3. Support for two languages: **English** and **Malay**
+4. The swap button is disabled when the same currency is selected or when the amount is zero
+5. Fully responsive design for desktop, tablet, and mobile devices
+6. Gradient-based UI design
+7. Smooth animations
+8. Transitions and hover effects
+9. Poppins font for consistent typography
+10. A hamburger menu for mobile navigation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Project Links**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **GitHub Repository:** [https://github.com/vilayat571/currency_exchange](https://github.com/vilayat571/currency_exchange)
+* **Design Inspiration (Dribbble):** [https://dribbble.com/tags/currency-exchange](https://dribbble.com/tags/currency-exchange)
+* **Figma Design:**
+  [https://www.figma.com/proto/UcwTNcugVsxnWhCSkMlHO6/Task-3--Currency-Form](https://www.figma.com/proto/UcwTNcugVsxnWhCSkMlHO6/Task-3--Currency-Form)
+* **Live Website (Vercel):**
+  [https://currency-exchange-weld-five.vercel.app/](https://currency-exchange-weld-five.vercel.app/)
